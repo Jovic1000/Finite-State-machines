@@ -3,17 +3,17 @@
 #include "CoffeeMachine.h"
 #include "User.h"
 
-void 🏃();
+void Run();
 
 int main()
 {
-    🏃();
+    Run();
     system(pause);
     return 0;
 }
 
 
-void 🏃() 
+void Run() 
 {
     int choice;
     bool machineActive = true;

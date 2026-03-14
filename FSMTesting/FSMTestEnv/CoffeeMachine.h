@@ -1,6 +1,5 @@
 #pragma once
 #include "CoffeeMachineStates.h"
-
 #include <string>
 
 class User;
@@ -15,6 +14,7 @@ public:
     void UserInteract(int input, const User& user);
 
 private:
+
     const int WATER_PER_CUP = 150; // ml
     const int BEANS_PER_CUP = 20;  // grams
     const int MAX_WATER_CAPACITY = 1000; // ml

@@ -3,6 +3,7 @@
 #include "CoffeeTypes.h"
 #include "Coffee.h"
 #include "User.h"
+#include "StateMachine.h"
 #include <iostream>
 #include <chrono>
 #include <thread>

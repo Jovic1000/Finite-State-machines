@@ -1,26 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="FSMTestEnv\Coffee.cpp" />
-    <ClCompile Include="FSMTestEnv\CoffeeMachine.cpp" />
-    <ClCompile Include="FSMTestEnv\User.cpp" />
-    <ClCompile Include="FSMTestEnv\main.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
-    <ClCompile Include="S_IDLE.cpp" />
-    <ClCompile Include="S_LOW_WATER.cpp" />
-    <ClCompile Include="S_LOW_BEAN.cpp" />
-    <ClCompile Include="S_BREWING.cpp" />
-    <ClCompile Include="S_CLEANING.cpp" />
-    <ClCompile Include="S_NEEDS_CLEANING.cpp" />
+    <ClCompile Include="FSMTestEnv\Coffee.cpp">
+      <Filter>Source_Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMTestEnv\CoffeeMachine.cpp">
+      <Filter>Source_Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMTestEnv\main.cpp">
+      <Filter>Source_Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMTestEnv\User.cpp">
+      <Filter>Source_Files</Filter>
+    </ClCompile>
+    <ClCompile Include="S_BREWING.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="S_CLEANING.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="S_IDLE.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="S_LOW_BEAN.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="S_LOW_WATER.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="S_NEEDS_CLEANING.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>Source_Files\S_States_Folder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FSMTestEnv\Coffee.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="FSMTestEnv\CoffeeMachine.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="FSMTestEnv\CoffeeMachineStates.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="FSMTestEnv\CoffeeTypes.h">
@@ -33,31 +52,45 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="IState.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="StateMachine.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="S_IDLE.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="S_LOW_WATER.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\S_States_Folder</Filter>
     </ClInclude>
     <ClInclude Include="S_BREWING.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="S_LOW_BEAN.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\S_States_Folder</Filter>
     </ClInclude>
     <ClInclude Include="S_CLEANING.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\S_States_Folder</Filter>
     </ClInclude>
-    <ClInclude Include="S_NEEDS_CLEANING.h" />
+    <ClInclude Include="S_IDLE.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
+    <ClInclude Include="S_LOW_BEAN.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
+    <ClInclude Include="S_LOW_WATER.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
+    <ClInclude Include="S_NEEDS_CLEANING.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
+    <ClInclude Include="FSMTestEnv\CoffeeMachineStates.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>Headers\S_States_Folder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
       <UniqueIdentifier>{30e93e67-9957-4449-8c97-1e124a110095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\S_States_Folder">
+      <UniqueIdentifier>{5ba021f2-ff8b-42b2-980b-4587fd3620d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_Files">
+      <UniqueIdentifier>{00960533-927e-459f-805c-b198b63bab97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_Files\S_States_Folder">
+      <UniqueIdentifier>{0b5c52b5-5846-4d0e-90e9-0cc75c2ab114}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
