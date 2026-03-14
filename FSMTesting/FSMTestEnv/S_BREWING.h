@@ -7,5 +7,6 @@ class S_BREWING : public IState
 	void Render() override;
 	void Exit() override;
 	void Enter() override;
+	void Delay(int delay);
 };
 

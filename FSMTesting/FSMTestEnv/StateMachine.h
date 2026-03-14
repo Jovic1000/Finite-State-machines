@@ -1,6 +1,6 @@
 #pragma once
-#include "FSMTestEnv/CoffeeTypes.h"
-#include "FSMTestEnv/CoffeeMachineStates.h"
+#include "CoffeeTypes.h"
+#include "CoffeeMachineStates.h"
 
 class IState;
 class StateMachine

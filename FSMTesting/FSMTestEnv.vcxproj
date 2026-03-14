@@ -95,28 +95,28 @@
     <ClInclude Include="FSMTestEnv\CoffeeMachineStates.h" />
     <ClInclude Include="FSMTestEnv\CoffeeTypes.h" />
     <ClInclude Include="FSMTestEnv\ConsoleDefines.h" />
+    <ClInclude Include="FSMTestEnv\IState.h" />
+    <ClInclude Include="FSMTestEnv\S_BREWING.h" />
+    <ClInclude Include="FSMTestEnv\S_CLEANING.h" />
+    <ClInclude Include="FSMTestEnv\S_IDLE.h" />
+    <ClInclude Include="FSMTestEnv\S_LOW_BEAN.h" />
+    <ClInclude Include="FSMTestEnv\S_LOW_WATER.h" />
+    <ClInclude Include="FSMTestEnv\S_NEEDS_CLEANING.h" />
+    <ClInclude Include="FSMTestEnv\StateMachine.h" />
     <ClInclude Include="FSMTestEnv\User.h" />
-    <ClInclude Include="S_CLEANING.h" />
-    <ClInclude Include="S_IDLE.h" />
-    <ClInclude Include="IState.h" />
-    <ClInclude Include="S_LOW_BEAN.h" />
-    <ClInclude Include="S_LOW_WATER.h" />
-    <ClInclude Include="StateMachine.h" />
-    <ClInclude Include="S_BREWING.h" />
-    <ClInclude Include="S_NEEDS_CLEANING.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FSMTestEnv\Coffee.cpp" />
     <ClCompile Include="FSMTestEnv\CoffeeMachine.cpp" />
+    <ClCompile Include="FSMTestEnv\S_BREWING.cpp" />
+    <ClCompile Include="FSMTestEnv\S_CLEANING.cpp" />
+    <ClCompile Include="FSMTestEnv\S_IDLE.cpp" />
+    <ClCompile Include="FSMTestEnv\S_LOW_BEAN.cpp" />
+    <ClCompile Include="FSMTestEnv\S_LOW_WATER.cpp" />
+    <ClCompile Include="FSMTestEnv\S_NEEDS_CLEANING.cpp" />
+    <ClCompile Include="FSMTestEnv\StateMachine.cpp" />
     <ClCompile Include="FSMTestEnv\User.cpp" />
     <ClCompile Include="FSMTestEnv\main.cpp" />
-    <ClCompile Include="S_CLEANING.cpp" />
-    <ClCompile Include="S_IDLE.cpp" />
-    <ClCompile Include="S_LOW_BEAN.cpp" />
-    <ClCompile Include="S_LOW_WATER.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
-    <ClCompile Include="S_BREWING.cpp" />
-    <ClCompile Include="S_NEEDS_CLEANING.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

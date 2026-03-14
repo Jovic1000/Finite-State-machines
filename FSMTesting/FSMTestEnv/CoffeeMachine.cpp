@@ -5,17 +5,9 @@
 #include "User.h"
 #include "StateMachine.h"
 #include <iostream>
-#include <chrono>
-#include <thread>
 
 
-void Sleep(int milliseconds)
-{
-    std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
-}
-
-
-CoffeeMachine::CoffeeMachine() : m_currentState(MachineState::IDLE), m_waterLevel(0), m_cupsMade(0), m_coffeeBeans(0)
+CoffeeMachine::CoffeeMachine() : m_currentState(MachineState::IDLE), m_stateMachine(), m_waterLevel(0), m_cupsMade(0), m_coffeeBeans(0)
 {
 }
 
@@ -79,18 +71,7 @@ Coffee CoffeeMachine::MakeCoffee()
 }
 
 Coffee CoffeeMachine::BrewCoffee()
-{
-    using std::cout, std::endl;
-    std::cout << "Brewing coffee.";        
-    std::flush(cout);
-    Sleep(1000);
-    std::cout << ".";
-    std::flush(cout);
-    Sleep(1000);
-    std::cout << ".\n";
-    std::flush(cout);
-    Sleep(1000);
-    
+{   
     m_waterLevel -= WATER_PER_CUP;
     m_coffeeBeans -= BEANS_PER_CUP;
     m_cupsMade += 1;

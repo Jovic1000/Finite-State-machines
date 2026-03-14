@@ -31,6 +31,7 @@ private:
     std::string StateToString(MachineState state);
     
     MachineState m_currentState;
+    StateMachine m_stateMachine;
     int m_waterLevel = 500;  // ml
     int m_coffeeBeans = 200; // grams
     int m_cupsMade = 0;
