@@ -1,5 +1,4 @@
 #pragma once
-#include "CoffeeTypes.h"
 #include "CoffeeMachineStates.h"
 
 class IState;
@@ -9,7 +8,7 @@ public:
 
 	void Update();
 	void Render();
-	void SetState(CoffeeType type);
+	void SetState(MachineState type);
 	IState* GetState();
 
 	StateMachine();

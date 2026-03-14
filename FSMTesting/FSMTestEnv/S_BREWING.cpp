@@ -19,6 +19,9 @@ void S_BREWING::Render()
     Delay(50);
     std::cout << ".\n";
     std::flush(cout);
+    Delay(50);
+
+    std::cout << "Here is your coffee! Enjoy!\n" << std::endl;
 }
 
 void S_BREWING::Exit()

@@ -18,7 +18,7 @@ void StateMachine::Render()
 	m_currentState->Render();
 }
 
-void StateMachine::SetState(CoffeeType type)
+void StateMachine::SetState(MachineState type)
 {
 	m_currentState = m_states[type];
 }

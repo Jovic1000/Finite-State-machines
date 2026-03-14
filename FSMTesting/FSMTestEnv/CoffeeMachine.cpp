@@ -72,20 +72,25 @@ Coffee CoffeeMachine::MakeCoffee()
 
 Coffee CoffeeMachine::BrewCoffee()
 {   
+
+    m_stateMachine.SetState(BREWING); // temp sets state to brewing
+
     m_waterLevel -= WATER_PER_CUP;
     m_coffeeBeans -= BEANS_PER_CUP;
     m_cupsMade += 1;
-    m_currentState = MachineState::BREWING; // Temporarily in brewing state
-    std::cout << "Here is your coffee! Enjoy!\n" << std::endl;
-    
+
+    m_stateMachine.Render();
+
     // After brewing, transition back to idle or require cleaning
     if (m_cupsMade >= CLEANING_THRESHOLD_CUPS) 
     {
-        std::cout << "Machine needs cleaning soon!\n";
-        Sleep(1000);
+        m_stateMachine.SetState(NEEDS_CLEANING);
+        m_stateMachine.Render();
     } 
-
-    m_currentState = MachineState::IDLE; // Back to idle if no immediate cleaning needed
+    else
+    {
+        m_stateMachine.SetState(IDLE); // Back to idle if no immediate cleaning needed
+    }
     
     // Seems like we could use a new selection to set the coffee type, huh?
     return Coffee(Americano);
