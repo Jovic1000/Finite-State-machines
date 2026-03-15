@@ -100,9 +100,11 @@ void CoffeeMachine::AddWater(int amountML)
 {
     std::cout << "Adding " << amountML << " ml of water...\n";
     m_waterLevel = std::min(MAX_WATER_CAPACITY, m_waterLevel + amountML);
+
     std::cout << "Water level is now " << m_waterLevel << " ml.\n";
-    if (m_waterLevel > 0 && m_currentState == MachineState::LOW_WATER) {
-        m_currentState = MachineState::IDLE; // Return to idle if low water was the issue
+    if (m_waterLevel > 0 && m_stateMachine.GetState() != ) 
+    {
+        m_stateMachine.SetState(IDLE); // Return to idle if low water was the issue
     }
 }
 
