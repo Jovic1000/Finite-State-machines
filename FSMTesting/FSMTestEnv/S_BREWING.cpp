@@ -1,4 +1,6 @@
 #include "S_BREWING.h"
+#include "CoffeeMachine.h"
+
 #include <iostream>
 #include <chrono>
 #include <thread>
@@ -24,15 +26,22 @@ void S_BREWING::Render()
     std::cout << "Here is your coffee! Enjoy!\n" << std::endl;
 }
 
-void S_BREWING::Exit()
+MachineState S_BREWING::Exit()
 {
+    return IDLE;
 }
 
-void S_BREWING::Enter()
+void S_BREWING::Enter(CoffeeMachine* cMac)
 {
+    m_cMachine = cMac;
 }
 
 void S_BREWING::Delay(int delayInMillisec)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(delayInMillisec));
+}
+
+bool S_BREWING::IsComplete()
+{
+    return m_stateComplete;
 }

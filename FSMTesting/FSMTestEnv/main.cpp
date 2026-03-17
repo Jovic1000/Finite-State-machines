@@ -19,6 +19,9 @@ void Run()
     bool machineActive = true;
     CoffeeMachine coffeeMaker3001;
     User user;
+
+    coffeeMaker3001.Init();
+
     while (machineActive) 
     {
         coffeeMaker3001.DisplayUserMessage();
