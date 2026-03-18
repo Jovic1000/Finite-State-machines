@@ -19,10 +19,14 @@ void StateMachine::Update()
 		if (m_currentState == m_states[IDLE])
 		{
 
+			if (m_currentState->Exit() == CLEANING)
+			{
+				m_currentState = m_states[CLEANING];
+			}
 
 			if (m_currentState->Exit() == BREWING)
 			{
-
+				m_currentState = m_states[BREWING];
 			}
 
 			if (m_cMachine->GetWater() < WATER_PER_CUP)
